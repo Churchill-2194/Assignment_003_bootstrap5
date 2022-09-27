@@ -8,7 +8,8 @@
     //1.fetch from data
     $email=$_POST
     //2.SQL Query to insert data to database
-    $queryData=mysqli_query($conn,"INSERT INTO subscribers email VALUES('$email')");
+    $queryData=mysqli_query($conn,"INSERT INTO subscribers (email) VALUES('$email')");
+    //3.check if data inserted
   }
   ?> 
   
