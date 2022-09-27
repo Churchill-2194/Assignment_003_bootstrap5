@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 003</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/5b882b79b4.js" crossorigin="anonymous"></script>
-</head>
 <body>
+
+  <?php
+  require_once('dbconnect.php');
+  if(isset($_POST['submitSubscriptions'])){
+    //1.fetch from data
+    $email=$_POST
+    //2.SQL Query to insert data to database
+    $queryData=mysqli_query($conn,"INSERT INTO subscribers email VALUES('$email')");
+  }
+  ?> 
+  
+
+
+
     <nav class="navbar navbar-expand-lg bg-light fixed-top ">
         <div class="container-fluid">
          <a href="#" class="navbar-brand">Zalego Academy</a>
